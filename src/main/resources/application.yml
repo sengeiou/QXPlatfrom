@@ -1,0 +1,18 @@
+
+spring:
+  redis:
+    database: 3
+    host: 127.0.0.1
+    port: 6379
+    password:
+    lettuce:
+      pool:
+        #如果赋值为-1，则表示不限制
+        max-active: 8
+        #连接池中最大空闲连接，默认值是0
+        max-idle: 8
+        #连接池中最小空闲连接，默认值是0
+        min-idle: 0
+mybatis-plus:
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
